@@ -1,7 +1,8 @@
 import axios from 'axios';
 
+// @ts-ignore
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_BACKEND_API_URL || 'http://localhost:8080/api',
+  baseURL: 'http://localhost:8080/api',
 });
 
 export default axiosInstance;
